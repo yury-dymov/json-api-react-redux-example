@@ -2,6 +2,43 @@
   padding: 20px;
 }
 
+.question {
+  padding: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.post {
+  padding: 5px;
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.comment {
+  margin-left: 30px;
+  font-size: 14px;
+}
+
+.comment::before {
+  content: "[Comment] "
+}
+
+.user {
+  font-weight: normal;
+  font-style: italic;
+}
+
+.comment > .user {
+  font-size: 14px;
+}
+
+.post > .user {
+  font-size: 20px;
+}
+
 .btn {
   display: inline-block;
   margin-bottom: 0;
