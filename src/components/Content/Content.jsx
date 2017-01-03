@@ -30,9 +30,10 @@ Content.propTypes = propTypes;
 
 function mapStateToProps(state) {
   if (state.data.meta['/test']) {
-    const questions = state.data.meta['/test'].data.map(object => build(state.data, 'question', object.id));
+    const questions = (state.data.meta['/test'].data || []).map(object => build(state.data, 'question', object.id));
+    const loading = state.data.meta['/test'].loading;
 
-    return { questions };
+    return { questions, loading };
   }
 
   return { questions: [] };

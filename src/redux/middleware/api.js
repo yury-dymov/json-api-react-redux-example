@@ -51,11 +51,11 @@ export default function (store) {
         return finalAction;
       };
 
-      next(actionWith({ type: API_DATA_REQUEST }));
+      next(actionWith({ type: API_DATA_REQUEST, endpoint }));
 
       return callApi(endpoint, options || {})
         .then(
-          response => next(actionWith({ response, type: API_DATA_SUCCESS })),
+          response => next(actionWith({ response, type: API_DATA_SUCCESS, endpoint })),
           error => next(actionWith({ type: API_DATA_FAILURE, error: error.message || 'Something bad happened' })),
         );
     };
