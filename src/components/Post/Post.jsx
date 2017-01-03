@@ -7,7 +7,7 @@ const propTypes = {
 };
 
 function Post({ post }) {
-  const commentWidgets = (post.comments || []).map(c => <Comment key={c.id} comment={c} />);
+  const commentWidgets = post.comments.map(c => <Comment key={c.id} comment={c} />);
 
   return (
     <div className="post">

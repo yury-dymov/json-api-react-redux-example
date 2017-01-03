@@ -6,7 +6,7 @@ const propTypes = {
 };
 
 function Question({ question }) {
-  const postWidgets = (question.posts || []).map(post => <Post key={post.id} post={post} />);
+  const postWidgets = question.posts.map(post => <Post key={post.id} post={post} />);
 
   return (
     <div className="question">
