@@ -2,7 +2,7 @@
 Show case for [json-api-normalizer](https://github.com/yury-dymov/json-api-normalizer) and [redux-object](https://github.com/yury-dymov/redux-object). DEMO - [https://yury-dymov.github.io/json-api-react-redux-example/](https://yury-dymov.github.io/json-api-react-redux-example/)
 
 # Description
-This is a demo application for [HabraHabr article](http://ToDo). A lot more details can be found there.
+This is a demo application for [HabraHabr article](https://habrahabr.ru/post/318958/). A lot more details can be found there.
 
 It represents, how data formatted with [JSON API](http://jsonapi.org/) can be further converted to a more redux-friendly format with [json-api-normalizer](https://github.com/yury-dymov/json-api-normalizer) library.
 
